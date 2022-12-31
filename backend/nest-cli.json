@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/node-backend/src",
+  "monorepo": true,
+  "root": "apps/node-backend",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/node-backend/tsconfig.app.json"
+  },
+  "projects": {
+    "node-backend": {
+      "type": "application",
+      "root": "apps/node-backend",
+      "entryFile": "main",
+      "sourceRoot": "apps/node-backend/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/node-backend/tsconfig.app.json"
+      }
+    },
+    "master-server": {
+      "type": "application",
+      "root": "apps/master-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/master-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/master-server/tsconfig.app.json"
+      }
+    },
+    "chat-server": {
+      "type": "application",
+      "root": "apps/chat-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/chat-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/chat-server/tsconfig.app.json"
+      }
+    },
+    "quest-server": {
+      "type": "application",
+      "root": "apps/quest-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/quest-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/quest-server/tsconfig.app.json"
+      }
+    },
+    "auth": {
+      "type": "library",
+      "root": "libs/auth",
+      "entryFile": "index",
+      "sourceRoot": "libs/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/auth/tsconfig.lib.json"
+      }
+    },
+    "websocket": {
+      "type": "library",
+      "root": "libs/websocket",
+      "entryFile": "index",
+      "sourceRoot": "libs/websocket/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/websocket/tsconfig.lib.json"
+      }
+    },
+    "login-server": {
+      "type": "application",
+      "root": "apps/login-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/login-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/login-server/tsconfig.app.json"
+      }
+    },
+    "database": {
+      "type": "library",
+      "root": "libs/database",
+      "entryFile": "index",
+      "sourceRoot": "libs/database/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/database/tsconfig.lib.json"
+      }
+    },
+    "character": {
+      "type": "library",
+      "root": "libs/character",
+      "entryFile": "index",
+      "sourceRoot": "libs/character/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/character/tsconfig.lib.json"
+      }
+    },
+    "inventory": {
+      "type": "library",
+      "root": "libs/inventory",
+      "entryFile": "index",
+      "sourceRoot": "libs/inventory/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/inventory/tsconfig.lib.json"
+      }
+    },
+    "chat": {
+      "type": "library",
+      "root": "libs/chat",
+      "entryFile": "index",
+      "sourceRoot": "libs/chat/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/chat/tsconfig.lib.json"
+      }
+    },
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
+    },
+    "character-server": {
+      "type": "application",
+      "root": "apps/character-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/character-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/character-server/tsconfig.app.json"
+      }
+    },
+    "party-server": {
+      "type": "application",
+      "root": "apps/party-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/party-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/party-server/tsconfig.app.json"
+      }
+    },
+    "item-server": {
+      "type": "application",
+      "root": "apps/item-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/item-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/item-server/tsconfig.app.json"
+      }
+    },
+    "proxy-server": {
+      "type": "application",
+      "root": "apps/proxy-server",
+      "entryFile": "main",
+      "sourceRoot": "apps/proxy-server/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/proxy-server/tsconfig.app.json"
+      }
+    }
+  }
+}
