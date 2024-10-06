@@ -5,7 +5,10 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
-const Engine = dynamic(() => import('../src/Engine'), { ssr: false })
+const Engine = dynamic(
+  () => import('../src/Engine').then(({ Engine }) => Engine),
+  { ssr: false }
+)
 export default function Home() {
   return (
     <>

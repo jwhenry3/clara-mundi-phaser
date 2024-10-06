@@ -1,17 +1,17 @@
-import { useState } from 'react'
+'use client'
 
-import styles from '../styles/fixed.module.css'
+import { fixed } from './common.styles'
 import { useGame } from './hooks/use-game'
-import Hud from './Hud'
-import Lobby from './Lobby'
-import Menu from './Menu'
+import { Hud } from './Hud'
+import { Lobby } from './Lobby'
+import { Menu } from './Menu'
 
-export default function Engine() {
+export function Engine() {
   const { container, game, update } = useGame()
   return (
     <div>
       <div
-        className={styles.fixed}
+        className={fixed}
         ref={(element) =>
           container !== (element || undefined) && update(element || undefined)
         }

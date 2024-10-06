@@ -1,5 +1,7 @@
-import styles from '../styles/fixed.module.css'
+import { fixed } from './common.styles'
 
-export default function Menu() {
-  return <div className={styles.fixed}></div>
+export function Menu() {
+  return <div className={fixed}>
+    
+  </div>
 }

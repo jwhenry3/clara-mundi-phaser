@@ -1,5 +1,5 @@
-import styles from '../styles/fixed.module.css'
+import { fixed } from './common.styles'
 
-export default function Hud() {
-  return <div className={styles.fixed}></div>
+export function Hud() {
+  return <div className={fixed}></div>
 }
